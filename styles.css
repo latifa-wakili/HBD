@@ -78,7 +78,7 @@ body {
 
 .background-message:hover {
   opacity: 0.9;
-  transform: scale(1.07); /* Slightly enlarge on hover */
+  transform: scale(1.07);
 }
 
 .container {
@@ -94,13 +94,13 @@ body {
   top: 23%;
   left: 40%;
   transform: translate(-50%, -50%);
-  text-align: top;
+  text-align: center;
   border: 2px solid #ffffff;
   animation: pulse 5.5s infinite;
   background-image: url(myl.jpg);
   background-repeat: no-repeat;
   background-size: 290px;
-  background-position:center ;
+  background-position: center;
 }
 
 .p {
@@ -127,7 +127,6 @@ body {
   color: #ffffff;
   text-shadow: 12px 14px 7px rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
-
 }
 
 .heart {
@@ -139,15 +138,21 @@ body {
   font-family: edwardian script itc;
   text-shadow: 2px 14px 4px rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
-
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   .background-message {
     width: 200px;
@@ -171,6 +176,7 @@ body {
   }
 }
 
+/* Mobile responsiveness */
 @media (max-width: 414px) {
   .background-message {
     width: 180px;
@@ -190,4 +196,3 @@ body {
     font-size: 38px;
   }
 }
-
